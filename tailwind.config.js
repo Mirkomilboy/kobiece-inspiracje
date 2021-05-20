@@ -7,6 +7,16 @@ module.exports = {
       fontFamily: {
         lato: ["Lato"],
       },
+      colors: {
+        gray: {
+          light: '#8b8b8b',
+        },
+        footer: {
+          bg: '#3a3939',
+          border: '#707070',
+
+        }
+      }
     },
   },
   variants: {
