@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bg-image {
+    background: linear-gradient(180deg, transparent 65%, rgba(0,0,0,.5) 100%);
+    /* background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)); */
+    /* background: url("../public/img/magnesium.jpg"); linear-gradient(180deg,rgba(255,255,255,0.15),rgba(255,255,255,0)), */
+}
