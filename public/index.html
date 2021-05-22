@@ -23,12 +23,11 @@
         <!-- left -->
         <div class="w-full md:w-2/3 pt-10 md:pt-14">
             <div style="background-image: url(img/magnesium.jpg)" class="relative h-[600px] bg-no-repeat bg-center rounded-lg mr-10">
-                <a href="#">
+                <a class="absolute top-0 h-full w-full" href="#">
                     <!-- <img class="w-full rounded-lg" src="img/magnesium.jpg" alt="magnesium 12">    -->
                     <div class="absolute z-20 bottom-0 p-6 md:p-12">
                         <p><span class="text-xs text-white rounded bg-yellow-500 p-1">Zdrowie</span></p>
-                        <h1 class="text-white text-3xl font-bold">ZdrowieTe sygnały wysyła organizm gdy brakuje mu
-                            magnezu</h1>
+                        <h1 class="text-white text-3xl font-bold">ZdrowieTe sygnały wysyła organizm gdy brakuje mu magnezu</h1>
                         <div class="flex text-white space-x-4 pt-4 pb-6">
                             <div>
                                 <a class="flex items-center space-x-1" href="#">
@@ -66,7 +65,7 @@
                 <div class="flex-1">
                     <a class="block" href="#"><span
                             class="text-xs text-white rounded bg-yellow-500 p-1">Kulinaria</span></a>
-                    <a class="block leading-5 font-bold mt-2" href="#">10 kontrowersyjnych polskich potraw</a> <!-- truncate w-28 -->
+                    <a class="text-truncate block leading-5 font-bold mt-2" href="#">10 kontrowersyjnych polskich potraw</a> <!-- truncate w-28 overflow-ellipsis -->
                     <div class="flex flex-wrap text-gray-light py-2">
                         <div class="pr-4">
                             <a class="flex items-center space-x-1" href="#">
@@ -1071,6 +1070,8 @@
             </div>
         </div>
     </div>
+
+    <script src="app.js"></script>
 </body>
 
 </html>
