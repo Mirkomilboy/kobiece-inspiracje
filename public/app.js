@@ -1,12 +1,16 @@
-const str = document.querySelector('.text-truncate').textContent;
+const menuButtons = document.querySelectorAll('.menu-btn')
 
-console.log(typeof(truncate));
+menuButtons.forEach(button => button.addEventListener('click', e => {
+  e.preventDefault();
 
-// if (truncate.length > 15) {
-//     truncate = truncate.substring(0, 14) + "...";
-//   }
+  document.body.classList.toggle('menu-active')
+}));
 
 
-  function truncate(str, n){
-    return (str.length > 15) ? str.substr(0, 15-1) + '&hellip;' : str;
-  };
+window.onclick = e => {
+  const menuBtn = e.target.classList.contains('menu-btn')
+  if (document.body.classList.contains('menu-active') && !menuBtn) {
+    document.body.classList.toggle('menu-active')
+  }
+}
+

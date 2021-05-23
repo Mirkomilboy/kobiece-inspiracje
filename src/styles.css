@@ -2,8 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
+*, body {
+    @apply font-lato
+}
+
+
+body.menu-active {
+    @apply transition overflow-hidden
+}
+
+.content_nav {
+    @apply transition-transform duration-500 ease-out transform translate-x-full
+}
+
+body.menu-active .content_nav {
+ @apply translate-x-0
+}
+
+body.menu-active .mobile-overlay {
+    @apply visible transition-opacity duration-300 ease-out;
+    animation: fadeIn .3s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to   { opacity: 0.9; }
+}
+
+
 .bg-image {
     background: linear-gradient(180deg, transparent 65%, rgba(0,0,0,.5) 100%);
     /* background: linear-gradient(rgba(29, 38, 113, 0.8), rgba(195, 55, 100, 0.8)); */
     /* background: url("../public/img/magnesium.jpg"); linear-gradient(180deg,rgba(255,255,255,0.15),rgba(255,255,255,0)), */
+}
+
+
+.line-clamp {
+    font-size: 17px;
+    display: block;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-height: 3.7em;
+}
+
+.flex-120 {
+    flex: 0 0 120px;
+    width: 120px;
 }
